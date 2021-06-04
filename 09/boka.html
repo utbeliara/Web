@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="sv" dir="ltr">
+
+<head>
+  <title>Bright Hotel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <h1>Bright Hotel</h1>
+  <nav class="topNav" id="myTopnav">
+    <a href="index.html" id="nav1">Start</a>
+    <a href="boka.html" id="nav2" class="active">Boka</a>
+    <a href="hitta.html" id="nav3">Hitta</a>
+    <a href="kontakta.html" id="nav4">Kontakta</a>
+    <a href="sevardheter.html" id="nav5">Sevärdheter</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i></a>
+  </nav>
+  <img src="hotel_room.jpg" alt="Ett av våra hotellrum" class="boka">
+  <form action="/action_page.php" class="boka">
+    <div class="row">
+      <label>Fält markerade med * är obligatoriska.</label>
+    </div>
+    <div class="row">
+      <label for="firstName">Förnamn*</label>
+      <input type="text" id="firstName" name="firstName" placeholder="Ditt förnamn ...">
+    </div>
+    <div class="row">
+      <label for="lastName">Efternamn*</label>
+      <input type="text" id="lastName" name="lastName" placeholder="Ditt efternamn ...">
+    </div>
+    <div class="row">
+      <label for="telephone">Telefonnummer*</label>
+      <input type="text" id="telephone" name="telephone" placeholder="Ditt telefonnummer ...">
+    </div>
+    <div class="row">
+      <label for="e-mail">E-post*</label>
+      <input type="text" id="e-mail" name="e-mail" placeholder="Din e-postadress ...">
+    </div>
+    <div class="row">
+      <label>Rumstyp*</label>
+      <select id="typeOfRoom" name="typeOfRoom">
+        <option value="enkel">Enkelrum</option>
+        <option value="dubbel">Dubbelrum</option>
+        <option value="suit">Suit</option>
+      </select>
+    </div>
+    <div class="row">
+      <label for="other">Övrigt</label>
+      <textarea id="other" name="other" placeholder="Annat som du vill meddela oss angående din bokning ..."></textarea>
+    </div>
+    <div class="row">
+      <input type="submit" value="Skicka bokning">
+    </div>
+  </form>
+  <footer>
+    <p>Bright Hotel | Storgatan 1 | 123 45 Storstad | 012 12 34 56</p>
+  </footer>
+  <script src="nav.js"></script>
+</body>
+
+</html>
